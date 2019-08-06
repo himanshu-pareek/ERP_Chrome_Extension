@@ -17,6 +17,8 @@
         "default_title": "ERP Login"
     },
 
+    "options_page": "options/index.html",
+
     "background": {
         "scripts": [
             "background/js/eventPage.js"

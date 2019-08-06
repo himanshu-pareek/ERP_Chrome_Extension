@@ -1,8 +1,8 @@
 $(function() {
     var users = [
         {
-            name: "Name of student (optinal)",
-            userId: "Your Roll Number",
+            name: "Himanshu Pareek",
+            userId: "///////////",
             password: "Your Password",
             security: [
                 {
@@ -21,8 +21,8 @@ $(function() {
         },
 
         {
-            name: "Name of student (optinal)",
-            userId: "Your Roll Number",
+            name: "Heeramani Prasad",
+            userId: "//////////",
             password: "Your Password",
             security: [
                 {
