@@ -1,41 +1,41 @@
 $(function() {
     var users = [
         {
-            name: "Himanshu Pareek",
-            userId: "15CS30016",
-            password: "TemporaryPassword",
+            name: "Name of student (optinal)",
+            userId: "Your Roll Number",
+            password: "Your Password",
             security: [
                 {
-                    question: "What is your name?",
-                    answer: "Himanshu Pareek"
+                    question: "Security question 1",
+                    answer: "Answer 1"
                 },
                 {
-                    question: "Which book do you like most?",
-                    answer: "Maths"
+                    question: "Security question 2",
+                    answer: "Answer 2"
                 },
                 {
-                    question: "Who are you?",
-                    answer: "indian"
+                    question: "Security question 3",
+                    answer: "Answer 3"
                 }
             ]
         },
 
         {
-            name: "Heeramani Prasad",
-            userId: "15CS30015",
-            password: "TemporaryPassword",
+            name: "Name of student (optinal)",
+            userId: "Your Roll Number",
+            password: "Your Password",
             security: [
                 {
-                    question: "What is your name?",
-                    answer: "Heeramani Prasad"
+                    question: "Security question 1",
+                    answer: "Answer 1"
                 },
                 {
-                    question: "Which book do you like most?",
-                    answer: "Geeta"
+                    question: "Security question 2",
+                    answer: "Answer 2"
                 },
                 {
-                    question: "Who are you?",
-                    answer: "indian"
+                    question: "Security question 3",
+                    answer: "Answer 3"
                 }
             ]
         }
