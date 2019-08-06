@@ -11,13 +11,42 @@
 </head>
 <body>
     <h1>Welcome to ERP login Extension</h1>
-    <h3>Add User(s) in the following list</h3>
+    <button id="add_user">Add new user</button>
     <table id="users_table">
-        <tr>
-            <th>Name</th>
-            <th>Id (Roll No.)</th>
-            <th>Actions</th>
-        </tr>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Id (Roll No.)</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
     </table>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <form id="save_user_form">
+              Name: <input type="text" id="name" placeholder="Enter name of student Ex. Himanshu Pareek"> <br />
+              RollNo: <input type="text" placeholder="Enter roll no. Ex. 15CS30016" id="userId"> <br />
+              Password: <input type="password" placeholder="Enter password here" id="password"> <br />
+              Note: Security questions and their answers must be as it is in the ERP. <br />
+              Question1: <input type="text" placeholder="Security question 1" id="question1">
+              Answer: <input type="text" placeholder="Answer of question 1" id="answer1"><br />
+              Question2: <input type="text" placeholder="Security question 2" id="question2">
+              Answer: <input type="text" placeholder="Answer of question 2" id="answer2"><br />
+              Question3: <input type="text" placeholder="Security question 3" id="question3">
+              Answer: <input type="text" placeholder="Answer of question 3" id="answer3"><br />
+          </form>
+          <div class="modal-footer">
+                <button id="cancel_button">Cancel</button> <button id="save_user_button">Save</button>
+        </div>
+        </div>
+      </div>
 </body>
 </html>

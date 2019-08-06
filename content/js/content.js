@@ -6,8 +6,8 @@ chrome.runtime.onMessage.addListener (function (request, sender, sendResponse) {
     if (request.todo == "loginUser") {
         var user = request.user;
 
-        console.log (this);
         $('#user_id').val(user.userId);
+        $('#password').val (user.password);
         var user_id = $("#user_id").val();
         var request = $.ajax({
             url: "getSecurityQues.htm",
@@ -36,7 +36,6 @@ chrome.runtime.onMessage.addListener (function (request, sender, sendResponse) {
                 }
             }
         });
-        $('#password').val (user.password);
         
     }
     
