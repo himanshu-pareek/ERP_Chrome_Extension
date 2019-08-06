@@ -1,0 +1,46 @@
+{
+    "manifest_version": 2,
+
+    "name": "ERP IIT KGP",
+    "version": "1.0",
+    "description": "This extension helps store login information and login to ERP without any delay just in a click.",
+
+    "icons": {
+        "16": "icons/icon16.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon48.png"
+    },
+
+    "page_action": {
+        "default_icon": "icons/icon48.png",
+        "default_popup": "popup/index.html",
+        "default_title": "ERP Login"
+    },
+
+    "background": {
+        "scripts": [
+            "background/js/eventPage.js"
+        ],
+        "persistent": false
+    },
+
+    "content_scripts": [
+        {
+            "matches": [
+                "https://erp.iitkgp.ac.in/SSOAdministration/login.htm*"
+            ],
+            "js": [
+                "content/js/content.js",
+                "jquery-3.4.1.min.js"
+            ],
+            "css": [
+                "content/css/content.css"
+            ]
+        }
+    ],
+
+    "permissions": [
+        "tabs",
+        "https://erp.iitkgp.ac.in/*"
+    ]
+}
