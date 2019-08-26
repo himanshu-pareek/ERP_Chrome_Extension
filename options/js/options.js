@@ -66,11 +66,11 @@ $(function () {
             $("#userId").val (user.userId);
             $("#password").val (user.password);
             $("#question1").val (user.security[0].question);
-            $("#answer1").val (user.security[0].question);
+            $("#answer1").val (user.security[0].answer);
             $("#question2").val (user.security[1].question);
-            $("#answer2").val (user.security[1].question);
+            $("#answer2").val (user.security[1].answer);
             $("#question3").val (user.security[2].question);
-            $("#answer3").val (user.security[2].question);
+            $("#answer3").val (user.security[2].answer);
         }
 
     };
